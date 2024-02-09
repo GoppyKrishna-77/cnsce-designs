@@ -1,0 +1,175 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.navbar {
+	background-color: #05082b;
+}
+
+.nav-link {
+	font-size: large;
+	margin-right: 10px;
+}
+
+.card-anchor {
+	text-decoration: none;
+}
+.card {
+	position: relative;
+	transition: transform 0.3s, box-shadow 0.3s;
+	cursor: pointer;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+	background-color: #05082b;
+}
+
+.footer-logo {
+	width: 65%;
+	margin-bottom: 10px;
+}
+
+.footer-icons i {
+	font-size: x-large;
+}
+
+.footer-mail i {
+	font-size: large;
+	margin-right: 3px;
+}
+
+.footer h4 i {
+	font-size: larger;
+}
+
+.footer-mail a {
+	text-decoration: none;
+	font-size: larger;
+}
+
+.quick-links {
+	padding-left: 10px;
+	width: fit-content;
+}
+
+.quick-links li {
+	list-style: none;
+	font-size: large;
+	transition: transform 0.3s ease-in-out;
+	margin-bottom: 3px;
+}
+
+.quick-links li a {
+	text-decoration: none;
+}
+
+.quick-links li:hover {
+	cursor: pointer;
+	transform: translateX(8px);
+}
+
+.footer-institution a {
+	text-decoration: none;
+	font-size: large;
+}
+
+.footer-institution i {
+	font-size: larger;
+	margin-right: 3px;
+}
+
+.footer-address {
+	text-align: justify;
+	margin-top: 5px;
+}
+
+.contest-poster {
+	width: 60%;
+}
+
+.event-details a {
+	text-decoration: none;
+	text-wrap: wrap;
+}
+
+.event-details img {
+	position: relative;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-details img:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	.event-details {
+		height: 64vh;
+	}
+	.form-control {
+		width: 45vw;
+	}
+	.form-container button {
+		width: 25vw;
+	}
+	.admin-controls-container {
+		height: 36vh;
+	}
+	.error-container {
+		height: 40.5vh;
+	}
+    .error-container img{
+        width: 50%;
+    }
+}
+.form-container {
+	height: fit-content;
+}
+/* Laptops */
+@media only screen and (min-width: 1025px) {
+	.form-control {
+		width: 25vw;
+	}
+	.form-container button {
+		width: 15vw;
+	}
+	.admin-controls-container {
+		height: 60vh;
+	}
+	.error-container {
+		height: 60vh;
+	}
+    .error-container img{
+        width: 25%;
+    }
+}
+/* Mobile Phones */
+@media only screen and (max-width: 767px) {
+	.error-container {
+		height: 70vh;
+	}
+    .error-container img{
+        width: 75%;
+    }
+}
+
+.error-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.error-message {
+	text-align: center;
+}
